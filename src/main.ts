@@ -1,60 +1,78 @@
 import './style.css'
-import typescriptLogo from './assets/typescript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { setupCounter } from './counter.ts'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${typescriptLogo}" class="framework" alt="TypeScript logo"/>
-    <img src="${viteLogo}" class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.ts</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+const app = document.querySelector<HTMLDivElement>('#app')
 
-<div class="ticks"></div>
+if (!app) {
+  throw new Error('App root not found')
+}
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src="${viteLogo}" alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://www.typescriptlang.org" target="_blank">
-          <img class="button-icon" src="${typescriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+app.innerHTML = `
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Raj Tiwari home">
+      <span class="brand-mark">RT</span>
+      <span>Raj Tiwari</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<div class="ticks"></div>
-<section id="spacer"></section>
+  <main id="top">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Full-stack developer · AI systems · Competitive programming</p>
+        <h1 id="hero-title">I build applied AI products that feel useful before they feel flashy.</h1>
+        <p class="hero-lede">
+          Computer Science undergraduate from Kanpur, building MERN, Python, and ML projects
+          across safety, fintech, e-commerce, policy analysis, and developer tooling.
+        </p>
+        <div class="hero-actions" aria-label="Primary links">
+          <a class="button primary" href="#work">View projects</a>
+          <a class="button" href="https://github.com/Rajtiwari0202" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="https://leetcode.com/u/RajTiwari2007/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Profile summary">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/185112065?v=4" alt="Raj Tiwari" />
+        <div>
+          <p class="panel-label">Current focus</p>
+          <h2>Agentic AI, production web apps, and stronger DSA fundamentals.</h2>
+        </div>
+        <dl class="stat-grid">
+          <div>
+            <dt>LeetCode</dt>
+            <dd>350+ solved</dd>
+          </div>
+          <div>
+            <dt>Contest rating</dt>
+            <dd>1742</dd>
+          </div>
+          <div>
+            <dt>GitHub repos</dt>
+            <dd>46 public</dd>
+          </div>
+          <div>
+            <dt>Best rank</dt>
+            <dd>205 weekly</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section intro-strip" aria-label="Portfolio positioning">
+      <p>
+        This portfolio is being rebuilt around project evidence: what the product does,
+        what stack powered it, and why it matters.
+      </p>
+    </section>
+
+    <section class="section placeholder-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="work-title">Flagship projects are coming next.</h2>
+      </div>
+    </section>
+  </main>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
