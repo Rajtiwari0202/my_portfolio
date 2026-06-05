@@ -6,6 +6,8 @@ if (!app) {
   throw new Error('App root not found')
 }
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 type Project = {
   name: string
   summary: string
@@ -39,10 +41,10 @@ const projects: Project[] = [
     accent: 'Safety tech',
     proof: 'Silent SOS, care companion, and legal guidance workflows',
     gallery: [
-      { src: '/projects/resq-her/dashboard.png', label: 'Dashboard' },
-      { src: '/projects/resq-her/silent-sos.png', label: 'Silent SOS' },
-      { src: '/projects/resq-her/legal-bot.png', label: 'Legal bot' },
-      { src: '/projects/resq-her/care-companion.png', label: 'Care companion' },
+      { src: asset('projects/resq-her/dashboard.png'), label: 'Dashboard' },
+      { src: asset('projects/resq-her/silent-sos.png'), label: 'Silent SOS' },
+      { src: asset('projects/resq-her/legal-bot.png'), label: 'Legal bot' },
+      { src: asset('projects/resq-her/care-companion.png'), label: 'Care companion' },
     ],
   },
   {
@@ -57,10 +59,10 @@ const projects: Project[] = [
     accent: 'Fintech',
     proof: 'Authentication, watchlists, orders, holdings, and charted dashboards',
     gallery: [
-      { src: '/projects/vestora/landing.png', label: 'Landing page' },
-      { src: '/projects/vestora/dashboard.png', label: 'Dashboard' },
-      { src: '/projects/vestora/pricing.png', label: 'Pricing' },
-      { src: '/projects/vestora/signup.png', label: 'Sign up' },
+      { src: asset('projects/vestora/landing.png'), label: 'Landing page' },
+      { src: asset('projects/vestora/dashboard.png'), label: 'Dashboard' },
+      { src: asset('projects/vestora/pricing.png'), label: 'Pricing' },
+      { src: asset('projects/vestora/signup.png'), label: 'Sign up' },
     ],
   },
   {
@@ -74,12 +76,12 @@ const projects: Project[] = [
     accent: 'Commerce',
     proof: 'Storefront, cart, checkout, account, order, and invoice flows',
     gallery: [
-      { src: '/projects/pyshop/storefront.png', label: 'Storefront' },
-      { src: '/projects/pyshop/product-detail.png', label: 'Product detail' },
-      { src: '/projects/pyshop/cart.png', label: 'Cart' },
-      { src: '/projects/pyshop/checkout.png', label: 'Checkout' },
-      { src: '/projects/pyshop/orders.png', label: 'Orders' },
-      { src: '/projects/pyshop/login.png', label: 'Login' },
+      { src: asset('projects/pyshop/storefront.png'), label: 'Storefront' },
+      { src: asset('projects/pyshop/product-detail.png'), label: 'Product detail' },
+      { src: asset('projects/pyshop/cart.png'), label: 'Cart' },
+      { src: asset('projects/pyshop/checkout.png'), label: 'Checkout' },
+      { src: asset('projects/pyshop/orders.png'), label: 'Orders' },
+      { src: asset('projects/pyshop/login.png'), label: 'Login' },
     ],
   },
   {
@@ -93,10 +95,10 @@ const projects: Project[] = [
     accent: 'Security AI',
     proof: 'Policy gap register, exports, and improved policy generation',
     gallery: [
-      { src: '/projects/policyguard/dashboard.png', label: 'Dashboard' },
-      { src: '/projects/policyguard/gap-register.png', label: 'Gap register' },
-      { src: '/projects/policyguard/exports.png', label: 'Exports' },
-      { src: '/projects/policyguard/improved-policy.png', label: 'Improved policy' },
+      { src: asset('projects/policyguard/dashboard.png'), label: 'Dashboard' },
+      { src: asset('projects/policyguard/gap-register.png'), label: 'Gap register' },
+      { src: asset('projects/policyguard/exports.png'), label: 'Exports' },
+      { src: asset('projects/policyguard/improved-policy.png'), label: 'Improved policy' },
     ],
   },
 ]
@@ -214,7 +216,7 @@ app.innerHTML = `
         </div>
       </div>
       <aside class="hero-panel" aria-label="Profile summary">
-        <img class="portrait" src="/raj-tiwari-suit.jpeg" alt="Raj Tiwari wearing a blue suit" />
+        <img class="portrait" src="${asset('raj-tiwari-suit.jpeg')}" alt="Raj Tiwari wearing a blue suit" />
         <div>
           <p class="panel-label">Current focus</p>
           <h2>Applied AI systems, production web apps, and sharper DSA fundamentals.</h2>
