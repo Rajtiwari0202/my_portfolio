@@ -53,6 +53,12 @@ const projects: Project[] = [
     repo: 'https://github.com/Rajtiwari0202/vestora-trading-platform',
     live: 'https://vestora-trading-platform.vercel.app',
     accent: 'Fintech',
+    gallery: [
+      { src: '/projects/vestora/landing.png', label: 'Landing page' },
+      { src: '/projects/vestora/dashboard.png', label: 'Dashboard' },
+      { src: '/projects/vestora/pricing.png', label: 'Pricing' },
+      { src: '/projects/vestora/signup.png', label: 'Sign up' },
+    ],
   },
   {
     name: 'PyShop',
