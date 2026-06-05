@@ -87,6 +87,12 @@ const projects: Project[] = [
     stack: ['Python', 'Streamlit', 'Local LLM', 'Cybersecurity'],
     repo: 'https://github.com/Rajtiwari0202/PolicyGuard-Local-LLM-Powered-Policy-Gap-Analyzer-',
     accent: 'Security AI',
+    gallery: [
+      { src: '/projects/policyguard/dashboard.png', label: 'Dashboard' },
+      { src: '/projects/policyguard/gap-register.png', label: 'Gap register' },
+      { src: '/projects/policyguard/exports.png', label: 'Exports' },
+      { src: '/projects/policyguard/improved-policy.png', label: 'Improved policy' },
+    ],
   },
 ]
 
