@@ -159,7 +159,7 @@ app.innerHTML = `
         </div>
       </div>
       <aside class="hero-panel" aria-label="Profile summary">
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/185112065?v=4" alt="Raj Tiwari" />
+        <img class="portrait" src="/raj-tiwari-suit.jpeg" alt="Raj Tiwari wearing a blue suit" />
         <div>
           <p class="panel-label">Current focus</p>
           <h2>Agentic AI, production web apps, and stronger DSA fundamentals.</h2>
