@@ -69,6 +69,14 @@ const projects: Project[] = [
     stack: ['Django', 'SQLite', 'Razorpay', 'Bootstrap 5'],
     repo: 'https://github.com/Rajtiwari0202/PyShop-Ecommerce',
     accent: 'Commerce',
+    gallery: [
+      { src: '/projects/pyshop/storefront.png', label: 'Storefront' },
+      { src: '/projects/pyshop/product-detail.png', label: 'Product detail' },
+      { src: '/projects/pyshop/cart.png', label: 'Cart' },
+      { src: '/projects/pyshop/checkout.png', label: 'Checkout' },
+      { src: '/projects/pyshop/orders.png', label: 'Orders' },
+      { src: '/projects/pyshop/login.png', label: 'Login' },
+    ],
   },
   {
     name: 'PolicyGuard',
