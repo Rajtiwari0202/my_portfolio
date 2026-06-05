@@ -14,6 +14,10 @@ type Project = {
   repo: string
   live?: string
   accent: string
+  gallery?: {
+    src: string
+    label: string
+  }[]
 }
 
 type Credential = {
@@ -32,6 +36,12 @@ const projects: Project[] = [
     stack: ['Next.js', 'FastAPI', 'MongoDB', 'AI support flows'],
     repo: 'https://github.com/Rajtiwari0202/ResQ-Her',
     accent: 'Safety tech',
+    gallery: [
+      { src: '/projects/resq-her/dashboard.png', label: 'Dashboard' },
+      { src: '/projects/resq-her/silent-sos.png', label: 'Silent SOS' },
+      { src: '/projects/resq-her/legal-bot.png', label: 'Legal bot' },
+      { src: '/projects/resq-her/care-companion.png', label: 'Care companion' },
+    ],
   },
   {
     name: 'Vestora',
@@ -69,7 +79,7 @@ const projects: Project[] = [
 const credentials: Credential[] = [
   {
     title: 'Machine Learning Specialization',
-    issuer: 'DeepLearning.AI · Stanford University · Coursera',
+    issuer: 'DeepLearning.AI - Stanford University - Coursera',
     url: 'https://coursera.org/share/d81d6618a51c0e7ceb6bc920921f8bd5',
   },
   {
@@ -79,12 +89,12 @@ const credentials: Credential[] = [
   },
   {
     title: 'Advanced Learning Algorithms',
-    issuer: 'DeepLearning.AI · Coursera',
+    issuer: 'DeepLearning.AI - Coursera',
     url: 'https://coursera.org/share/8a2b00deb6f4439355e2513d477f0f6f',
   },
   {
     title: 'Unsupervised Learning, Recommenders & RL',
-    issuer: 'DeepLearning.AI · Coursera',
+    issuer: 'DeepLearning.AI - Coursera',
     url: 'https://coursera.org/share/467c0ac8d789b9e4a6421fe7761c831c',
   },
 ]
@@ -93,10 +103,29 @@ const projectCards = projects
   .map(
     (project, index) => `
       <article class="project-card ${index === 0 ? 'featured' : ''}">
-        <div class="project-visual" aria-hidden="true">
-          <span>${project.accent}</span>
-          <strong>${project.name}</strong>
-        </div>
+        ${
+          project.gallery
+            ? `<div class="project-gallery" aria-label="${project.name} screenshots">
+                <img class="gallery-hero" src="${project.gallery[0].src}" alt="${project.name} ${project.gallery[0].label} screenshot" />
+                <div class="gallery-thumbs">
+                  ${project.gallery
+                    .slice(1)
+                    .map(
+                      (shot) => `
+                        <figure>
+                          <img src="${shot.src}" alt="${project.name} ${shot.label} screenshot" />
+                          <figcaption>${shot.label}</figcaption>
+                        </figure>
+                      `,
+                    )
+                    .join('')}
+                </div>
+              </div>`
+            : `<div class="project-visual" aria-hidden="true">
+                <span>${project.accent}</span>
+                <strong>${project.name}</strong>
+              </div>`
+        }
         <div class="project-body">
           <div class="project-topline">
             <h3>${project.name}</h3>
@@ -146,7 +175,7 @@ app.innerHTML = `
   <main id="top">
     <section class="hero-section" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Full-stack developer · AI systems · Competitive programming</p>
+        <p class="eyebrow">Full-stack developer - AI systems - Competitive programming</p>
         <h1 id="hero-title">I build applied AI products that feel useful before they feel flashy.</h1>
         <p class="hero-lede">
           Computer Science undergraduate from Kanpur, building MERN, Python, and ML projects
@@ -257,7 +286,7 @@ app.innerHTML = `
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let’s build something that has a reason to exist.</h2>
+        <h2 id="contact-title">Let's build something that has a reason to exist.</h2>
       </div>
       <div class="contact-card">
         <a href="mailto:rajtiwari16916@gmail.com">rajtiwari16916@gmail.com</a>
