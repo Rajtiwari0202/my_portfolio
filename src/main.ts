@@ -14,6 +14,7 @@ type Project = {
   repo: string
   live?: string
   accent: string
+  proof: string
   gallery?: {
     src: string
     label: string
@@ -36,6 +37,7 @@ const projects: Project[] = [
     stack: ['Next.js', 'FastAPI', 'MongoDB', 'AI support flows'],
     repo: 'https://github.com/Rajtiwari0202/ResQ-Her',
     accent: 'Safety tech',
+    proof: 'Silent SOS, care companion, and legal guidance workflows',
     gallery: [
       { src: '/projects/resq-her/dashboard.png', label: 'Dashboard' },
       { src: '/projects/resq-her/silent-sos.png', label: 'Silent SOS' },
@@ -53,6 +55,7 @@ const projects: Project[] = [
     repo: 'https://github.com/Rajtiwari0202/vestora-trading-platform',
     live: 'https://vestora-trading-platform.vercel.app',
     accent: 'Fintech',
+    proof: 'Authentication, watchlists, orders, holdings, and charted dashboards',
     gallery: [
       { src: '/projects/vestora/landing.png', label: 'Landing page' },
       { src: '/projects/vestora/dashboard.png', label: 'Dashboard' },
@@ -69,6 +72,7 @@ const projects: Project[] = [
     stack: ['Django', 'SQLite', 'Razorpay', 'Bootstrap 5'],
     repo: 'https://github.com/Rajtiwari0202/PyShop-Ecommerce',
     accent: 'Commerce',
+    proof: 'Storefront, cart, checkout, account, order, and invoice flows',
     gallery: [
       { src: '/projects/pyshop/storefront.png', label: 'Storefront' },
       { src: '/projects/pyshop/product-detail.png', label: 'Product detail' },
@@ -87,6 +91,7 @@ const projects: Project[] = [
     stack: ['Python', 'Streamlit', 'Local LLM', 'Cybersecurity'],
     repo: 'https://github.com/Rajtiwari0202/PolicyGuard-Local-LLM-Powered-Policy-Gap-Analyzer-',
     accent: 'Security AI',
+    proof: 'Policy gap register, exports, and improved policy generation',
     gallery: [
       { src: '/projects/policyguard/dashboard.png', label: 'Dashboard' },
       { src: '/projects/policyguard/gap-register.png', label: 'Gap register' },
@@ -151,14 +156,15 @@ const projectCards = projects
             <h3>${project.name}</h3>
             <span>${project.accent}</span>
           </div>
+          <p class="project-proof">${project.proof}</p>
           <p>${project.summary}</p>
           <p class="impact">${project.impact}</p>
           <ul class="chip-list" aria-label="${project.name} technologies">
             ${project.stack.map((item) => `<li>${item}</li>`).join('')}
           </ul>
           <div class="card-actions">
-            <a href="${project.repo}" target="_blank" rel="noreferrer">Repository</a>
-            ${project.live ? `<a href="${project.live}" target="_blank" rel="noreferrer">Live demo</a>` : ''}
+            <a href="${project.repo}" target="_blank" rel="noreferrer">View code</a>
+            ${project.live ? `<a href="${project.live}" target="_blank" rel="noreferrer">Open live app</a>` : ''}
           </div>
         </div>
       </article>
@@ -196,10 +202,10 @@ app.innerHTML = `
     <section class="hero-section" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">Full-stack developer - AI systems - Competitive programming</p>
-        <h1 id="hero-title">I build applied AI products that feel useful before they feel flashy.</h1>
+        <h1 id="hero-title">I build AI-backed products with real user flows, not just demos.</h1>
         <p class="hero-lede">
-          Computer Science undergraduate from Kanpur, building MERN, Python, and ML projects
-          across safety, fintech, e-commerce, policy analysis, and developer tooling.
+          Computer Science undergraduate from Kanpur, shipping MERN, Python, Django, and ML projects
+          across safety tech, fintech dashboards, e-commerce, cybersecurity policy, and developer tooling.
         </p>
         <div class="hero-actions" aria-label="Primary links">
           <a class="button primary" href="#work">View projects</a>
@@ -211,7 +217,7 @@ app.innerHTML = `
         <img class="portrait" src="/raj-tiwari-suit.jpeg" alt="Raj Tiwari wearing a blue suit" />
         <div>
           <p class="panel-label">Current focus</p>
-          <h2>Agentic AI, production web apps, and stronger DSA fundamentals.</h2>
+          <h2>Applied AI systems, production web apps, and sharper DSA fundamentals.</h2>
         </div>
         <dl class="stat-grid">
           <div>
@@ -236,15 +242,15 @@ app.innerHTML = `
 
     <section class="section intro-strip" aria-label="Portfolio positioning">
       <p>
-        This portfolio is being rebuilt around project evidence: what the product does,
-        what stack powered it, and why it matters.
+        Built as a proof-first portfolio: every featured project shows the actual interface,
+        the shipped workflow, the stack behind it, and the engineering signal it represents.
       </p>
     </section>
 
     <section class="section placeholder-section" id="work" aria-labelledby="work-title">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
-        <h2 id="work-title">Four projects, four different kinds of proof.</h2>
+        <h2 id="work-title">Product screenshots first. Claims second.</h2>
       </div>
       <div class="project-grid">
         ${projectCards}
@@ -254,23 +260,23 @@ app.innerHTML = `
     <section class="section proof-section" id="proof" aria-labelledby="proof-title">
       <div class="section-heading">
         <p class="eyebrow">Proof</p>
-        <h2 id="proof-title">Competitive signals beyond coursework.</h2>
+        <h2 id="proof-title">Competitive signals outside the classroom.</h2>
       </div>
       <div class="proof-grid">
         <article class="proof-card">
           <span>01</span>
           <h3>HackWithUttarPradesh 2025</h3>
-          <p>Secured 3rd place in the Agentic AI Hackathon for an AI-agent based solution.</p>
+          <p>Secured 3rd place in an Agentic AI hackathon by building under real product constraints.</p>
         </article>
         <article class="proof-card">
           <span>02</span>
           <h3>HackIITK 2025 finalist</h3>
-          <p>Reached the Cybersecurity track finals with PolicyGuard, a local LLM-powered policy gap analyzer.</p>
+          <p>Reached the cybersecurity finals with PolicyGuard, a local LLM-powered policy gap analyzer.</p>
         </article>
         <article class="proof-card">
           <span>03</span>
           <h3>Debugging and Algo Club</h3>
-          <p>Secured 2nd in a Google Campus Contest and Debugging Competition, and won multiple college Algo Club contests.</p>
+          <p>Secured 2nd in a Google Campus contest and debugging competition, with multiple Algo Club wins.</p>
         </article>
       </div>
       <div class="credentials-grid">
@@ -306,7 +312,7 @@ app.innerHTML = `
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let's build something that has a reason to exist.</h2>
+        <h2 id="contact-title">Open to internships, hackathons, and serious product builds.</h2>
       </div>
       <div class="contact-card">
         <a href="mailto:rajtiwari16916@gmail.com">rajtiwari16916@gmail.com</a>
@@ -315,5 +321,10 @@ app.innerHTML = `
         <a href="https://leetcode.com/u/RajTiwari2007/" target="_blank" rel="noreferrer">LeetCode</a>
       </div>
     </section>
+
+    <footer class="site-footer">
+      <span>Raj Tiwari</span>
+      <span>Built with TypeScript, Vite, and enough screenshots to keep the claims honest.</span>
+    </footer>
   </main>
 `
