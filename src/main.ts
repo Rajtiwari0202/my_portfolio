@@ -203,11 +203,11 @@ app.innerHTML = `
   <main id="top">
     <section class="hero-section" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Full-stack developer - AI systems - Competitive programming</p>
-        <h1 id="hero-title">I build AI-backed products with real user flows, not just demos.</h1>
+        <p class="eyebrow">Raj Tiwari - Full-stack developer</p>
+        <h1 id="hero-title">Building practical AI and web products.</h1>
         <p class="hero-lede">
-          Computer Science undergraduate from Kanpur, shipping MERN, Python, Django, and ML projects
-          across safety tech, fintech dashboards, e-commerce, cybersecurity policy, and developer tooling.
+          Computer Science undergraduate from Kanpur working across MERN, Python, Django, and machine learning.
+          I like projects with clear workflows, useful interfaces, and measurable engineering depth.
         </p>
         <div class="hero-actions" aria-label="Primary links">
           <a class="button primary" href="#work">View projects</a>
@@ -219,7 +219,7 @@ app.innerHTML = `
         <img class="portrait" src="${asset('raj-tiwari-suit.jpeg')}" alt="Raj Tiwari wearing a blue suit" />
         <div>
           <p class="panel-label">Current focus</p>
-          <h2>Applied AI systems, production web apps, and sharper DSA fundamentals.</h2>
+          <h2>Applied AI systems, production web apps, and competitive programming.</h2>
         </div>
         <dl class="stat-grid">
           <div>
@@ -244,15 +244,15 @@ app.innerHTML = `
 
     <section class="section intro-strip" aria-label="Portfolio positioning">
       <p>
-        Built as a proof-first portfolio: every featured project shows the actual interface,
-        the shipped workflow, the stack behind it, and the engineering signal it represents.
+        A compact record of projects, screenshots, contest signals, and verified learning.
+        Each project includes the interface, the workflow, the stack, and the proof behind it.
       </p>
     </section>
 
     <section class="section placeholder-section" id="work" aria-labelledby="work-title">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
-        <h2 id="work-title">Product screenshots first. Claims second.</h2>
+        <h2 id="work-title">Selected projects with working product flows.</h2>
       </div>
       <div class="project-grid">
         ${projectCards}
@@ -262,7 +262,7 @@ app.innerHTML = `
     <section class="section proof-section" id="proof" aria-labelledby="proof-title">
       <div class="section-heading">
         <p class="eyebrow">Proof</p>
-        <h2 id="proof-title">Competitive signals outside the classroom.</h2>
+        <h2 id="proof-title">Proof beyond coursework.</h2>
       </div>
       <div class="proof-grid">
         <article class="proof-card">
@@ -314,7 +314,7 @@ app.innerHTML = `
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Open to internships, hackathons, and serious product builds.</h2>
+        <h2 id="contact-title">Open to internships, hackathons, and product-minded teams.</h2>
       </div>
       <div class="contact-card">
         <a href="mailto:rajtiwari16916@gmail.com">rajtiwari16916@gmail.com</a>
@@ -326,7 +326,7 @@ app.innerHTML = `
 
     <footer class="site-footer">
       <span>Raj Tiwari</span>
-      <span>Built with TypeScript, Vite, and enough screenshots to keep the claims honest.</span>
+      <span>Built with TypeScript, Vite, and a project-first portfolio structure.</span>
     </footer>
   </main>
 `
