@@ -211,6 +211,7 @@ app.innerHTML = `
         </p>
         <div class="hero-actions" aria-label="Primary links">
           <a class="button primary" href="#work">View projects</a>
+          <a class="button" href="${asset('RajTiwari_Resume.pdf')}" download="RajTiwari_Resume.pdf">Resume</a>
           <a class="button" href="https://github.com/Rajtiwari0202" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button" href="https://leetcode.com/u/RajTiwari2007/" target="_blank" rel="noreferrer">LeetCode</a>
         </div>
@@ -318,6 +319,7 @@ app.innerHTML = `
       </div>
       <div class="contact-card">
         <a href="mailto:rajtiwari16916@gmail.com">rajtiwari16916@gmail.com</a>
+        <a href="${asset('RajTiwari_Resume.pdf')}" download="RajTiwari_Resume.pdf">Download resume</a>
         <a href="https://www.linkedin.com/in/rajtiwari02" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com/Rajtiwari0202" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://leetcode.com/u/RajTiwari2007/" target="_blank" rel="noreferrer">LeetCode</a>
