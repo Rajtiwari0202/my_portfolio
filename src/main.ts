@@ -13,10 +13,11 @@ type Project = {
   summary: string
   impact: string
   stack: string[]
-  repo: string
+  repo?: string
   live?: string
   accent: string
   proof: string
+  status?: string
   gallery?: {
     src: string
     label: string
@@ -82,6 +83,23 @@ const projects: Project[] = [
       { src: asset('projects/pyshop/checkout.png'), label: 'Checkout' },
       { src: asset('projects/pyshop/orders.png'), label: 'Orders' },
       { src: asset('projects/pyshop/login.png'), label: 'Login' },
+    ],
+  },
+  {
+    name: 'FlowPilot AI',
+    summary:
+      'An AI workflow automation workspace for small businesses, with lead intake, AI follow-up drafts, approvals, activity logs, and sandbox demo data.',
+    impact:
+      'Adds a SaaS/product-ops signal: authentication, workflow state, approval queues, provider setup, billing readiness, and a safe public sandbox mode.',
+    stack: ['Next.js', 'Node.js', 'Supabase', 'Groq AI', 'Razorpay'],
+    accent: 'SaaS automation',
+    proof: 'Sandbox workspace, lead follow-up automation, approvals, and activity tracking',
+    status: 'Private case study',
+    gallery: [
+      { src: asset('projects/flowpilot/dashboard.png'), label: 'Dashboard' },
+      { src: asset('projects/flowpilot/approvals.png'), label: 'Approvals' },
+      { src: asset('projects/flowpilot/automations.png'), label: 'Automations' },
+      { src: asset('projects/flowpilot/activity.png'), label: 'Activity' },
     ],
   },
   {
@@ -165,8 +183,9 @@ const projectCards = projects
             ${project.stack.map((item) => `<li>${item}</li>`).join('')}
           </ul>
           <div class="card-actions">
-            <a href="${project.repo}" target="_blank" rel="noreferrer">View code</a>
+            ${project.repo ? `<a href="${project.repo}" target="_blank" rel="noreferrer">View code</a>` : ''}
             ${project.live ? `<a href="${project.live}" target="_blank" rel="noreferrer">Open live app</a>` : ''}
+            ${project.status ? `<span>${project.status}</span>` : ''}
           </div>
         </div>
       </article>

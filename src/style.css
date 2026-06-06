@@ -497,6 +497,7 @@ h1 {
 }
 
 .card-actions a,
+.card-actions span,
 .contact-card a {
   display: inline-flex;
   min-height: 38px;
@@ -507,6 +508,10 @@ h1 {
   color: var(--text);
   font-weight: 760;
   background: rgba(255, 255, 255, 0.05);
+}
+
+.card-actions span {
+  color: var(--soft);
 }
 
 .card-actions a:hover,
