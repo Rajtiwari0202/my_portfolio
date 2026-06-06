@@ -91,10 +91,11 @@ const projects: Project[] = [
       'An AI workflow automation workspace for small businesses, with lead intake, AI follow-up drafts, approvals, activity logs, and sandbox demo data.',
     impact:
       'Adds a SaaS/product-ops signal: authentication, workflow state, approval queues, provider setup, billing readiness, and a safe public sandbox mode.',
-    stack: ['Next.js', 'Node.js', 'Supabase', 'Groq AI', 'Razorpay'],
+    stack: ['Next.js', 'Node.js', 'Render API', 'Groq/local AI', 'Vercel'],
+    live: 'https://flowpilot-ai-web.vercel.app',
     accent: 'SaaS automation',
     proof: 'Sandbox workspace, lead follow-up automation, approvals, and activity tracking',
-    status: 'Private case study',
+    status: 'Live sandbox',
     gallery: [
       { src: asset('projects/flowpilot/dashboard.png'), label: 'Dashboard' },
       { src: asset('projects/flowpilot/approvals.png'), label: 'Approvals' },
