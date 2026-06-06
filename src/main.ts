@@ -345,9 +345,29 @@ app.innerHTML = `
       </div>
     </section>
 
-    <footer class="site-footer">
-      <span>Raj Tiwari</span>
-      <span>Built with TypeScript, Vite, and a project-first portfolio structure.</span>
+    <footer class="site-footer" aria-label="Footer">
+      <div class="footer-main">
+        <div>
+          <p class="footer-kicker">Available for internships and product builds</p>
+          <h2>Have a role, hackathon, or useful idea?</h2>
+          <p>
+            I am most interested in full-stack engineering, applied AI systems,
+            backend-heavy products, and teams that care about shipping usable software.
+          </p>
+        </div>
+        <div class="footer-actions" aria-label="Footer links">
+          <a href="mailto:rajtiwari16916@gmail.com">Email me</a>
+          <a href="${asset('RajTiwari_Resume.pdf')}" download="RajTiwari_Resume.pdf">Resume</a>
+          <a href="https://github.com/Rajtiwari0202" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/rajtiwari02" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Raj Tiwari</span>
+        <span>Kanpur, India</span>
+        <span>TypeScript + Vite</span>
+        <a href="#top">Back to top</a>
+      </div>
     </footer>
   </main>
 `
