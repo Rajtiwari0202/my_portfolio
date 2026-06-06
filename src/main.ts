@@ -365,7 +365,7 @@ app.innerHTML = `
       <div class="footer-bottom">
         <span>Raj Tiwari</span>
         <span>Kanpur, India</span>
-        <span>TypeScript + Vite</span>
+        <span>Full-stack and AI engineering</span>
         <a href="#top">Back to top</a>
       </div>
     </footer>
