@@ -63,7 +63,7 @@ export const site = {
     "LeetCode Knight (1,973 Rating • Top 2.98% • 600+ Solved) and Full-Stack Engineer building agentic AI and production web systems.",
   about: [
     "I'm a Computer Science undergraduate at Pranveer Singh Institute of Technology (PSIT), Kanpur (CGPA: 8.55/10), building production-ready full-stack applications, agentic workflows, and scalable backend infrastructure.",
-    "As a LeetCode Knight with a 1,973 contest rating (Top 2.98% globally) and 600+ DSA problems solved, I combine algorithmic depth with practical software engineering—having achieved Global Rank 205 in a Weekly Contest and maintained a 54-day max streak across 12 contests.",
+    "As a LeetCode Knight with a 1,973 contest rating (Top 2.98% globally) and 600+ DSA problems solved, I combine algorithmic depth with practical software engineering—having achieved Global Rank 205 in a Weekly Contest, a 93-day max streak, and 224 total active days.",
     "My work spans browser-based dev environments with WebContainers (Forge Editor), multi-agent systems (AI Travel Planner), AI evaluation platforms (PrepWise AI), cybersecurity gap analyzers (HackIITK Finalist), and rapid-response safety tech (ResQ-Her).",
   ],
   tldr: [
@@ -165,7 +165,7 @@ export const site = {
       id: "leetcode-knight",
       number: "01",
       title: "LeetCode Knight (Rating 1973 • Top 2.98%)",
-      description: "Knight badge holder with 1,973 contest rating, Top 2.98% globally (25,114 rank), 600+ DSA problems solved, Global Rank 205 in a Weekly Contest, and a 54-day max streak.",
+      description: "Knight badge holder with 1,973 contest rating, Top 2.98% globally (25,114 rank), 600+ DSA problems solved, Global Rank 205 in a Weekly Contest, 93-day max streak, and 224 total active days.",
       tag: "Knight Badge",
     },
     {

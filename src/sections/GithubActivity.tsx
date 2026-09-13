@@ -308,7 +308,7 @@ export function GithubActivity() {
                 <span>Contest & Streak</span>
               </div>
               <div className="font-semibold text-text">
-                54-Day Streak • 152 Active Days
+                93-Day Max Streak • 224 Active Days
               </div>
             </div>
 
