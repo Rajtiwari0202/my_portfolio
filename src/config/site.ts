@@ -54,7 +54,6 @@ export const site = {
   profileImages: [
     "raj-tiwari-suit.jpeg",
     "MyPicture5PieceSuitCropped.jpg",
-    "LeftView5PieceCropped.jpg",
   ],
   quote: {
     text: "Simplicity is prerequisite for reliability.",
