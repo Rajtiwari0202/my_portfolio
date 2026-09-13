@@ -53,7 +53,8 @@ export const site = {
   bannerImage: "cover.jpg",
   profileImages: [
     "raj-tiwari-suit.jpeg",
-    "raj-tiwari-2ndpic.jpeg",
+    "MyPicture5PieceSuitCropped.jpg",
+    "LeftView5PieceCropped.jpg",
   ],
   quote: {
     text: "Simplicity is prerequisite for reliability.",
