@@ -120,7 +120,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     },
     {
       id: "action-leetcode",
-      title: "Open LeetCode (Knight • 1,973 Rating • 600+ Solved)",
+      title: "Open LeetCode (Knight • 1,979 Rating • 819+ Solved)",
       category: "External & Actions",
       icon: ExternalLink,
       action: () => {

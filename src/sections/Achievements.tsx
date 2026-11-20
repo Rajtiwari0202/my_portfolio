@@ -70,11 +70,11 @@ export function Achievements() {
           </div>
         </div>
 
-        {/* Verified Coursera Credentials */}
+        {/* Verified Professional Certifications */}
         <div className="space-y-4 pt-2">
           <div className="flex items-center gap-2 font-mono text-xs text-muted">
             <ShieldCheck className="h-3.5 w-3.5 text-accent" />
-            <span>VERIFIED MACHINE LEARNING CREDENTIALS</span>
+            <span>VERIFIED PROFESSIONAL CERTIFICATIONS</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

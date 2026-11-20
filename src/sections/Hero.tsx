@@ -162,11 +162,11 @@ export function Hero({ onOpenPalette }: { onOpenPalette?: () => void }) {
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1.5 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-text hover:border-amber-500/60 transition-colors"
-            title="LeetCode Knight • 1,973 Contest Rating • 600+ Solved"
+            title="LeetCode Knight • 1,979 Contest Rating • 819+ Solved"
           >
             <span className="text-amber-400 font-bold">♞ Knight</span>
             <span className="text-muted">•</span>
-            <span className="text-text font-semibold">1973</span>
+            <span className="text-text font-semibold">1979</span>
             <ExternalLink className="h-3 w-3 text-muted" />
           </a>
 

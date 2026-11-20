@@ -1,12 +1,14 @@
 import { site } from "@/config/site";
 import { Shell, SectionHeader } from "@/components/Layout";
-import { Code2, Server, Cpu, Database } from "lucide-react";
+import { Code2, Server, Cpu, Database, Cloud, Terminal } from "lucide-react";
 
 const CATEGORY_ICONS: Record<string, any> = {
   Languages: Code2,
-  "Frontend & Full-Stack": Server,
-  "Applied AI & ML": Cpu,
-  "Databases & Infrastructure": Database,
+  "Backend & Microservices": Server,
+  "Databases & Caching": Database,
+  "Cloud, DevOps & Infra": Cloud,
+  "AI / ML & Optimization": Cpu,
+  "Core Computer Science": Terminal,
 };
 
 export function TechStack() {

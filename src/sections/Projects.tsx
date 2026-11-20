@@ -3,7 +3,7 @@ import { site } from "@/config/site";
 import { Shell, SectionHeader } from "@/components/Layout";
 import { ProjectCard } from "./ProjectCard";
 
-const CATEGORIES = ["All", "AI & ML", "Fintech & SaaS", "Commerce"] as const;
+const CATEGORIES = ["All", "Fullstack", "AI & ML", "Fintech & SaaS", "Commerce"] as const;
 
 export function Projects() {
   const [selectedCategory, setSelectedCategory] =
